@@ -2,6 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+
 import './App.css';
 
 function App() {
@@ -127,10 +129,7 @@ function App() {
       <div>
         Knives: {guestList.length * 2}
       </div>
-      <footer>
-        <h3>Have fun!</h3>
-        <p>Don't forget to mind your Ps and Qs!</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
